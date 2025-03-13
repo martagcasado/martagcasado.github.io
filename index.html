@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Personal</title>
-    <style>
+    <title>martagcasado</title>
+<style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -19,9 +19,11 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
         }
         h1, h2 {
             font-size: 2em;
+            text-align: center;
         }
         p, li {
             font-size: 1.2em;
@@ -33,15 +35,32 @@
         a:hover {
             text-decoration: underline;
         }
+        .profile-pic {
+            display: block;
+            margin: 0 auto 20px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
         ul {
             list-style-type: none;
             padding: 0;
+        }
+        ul li::before {
+            content: "\2022";
+            color: #007BFF;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Marta Garcia-Casado</h1>
+         <img src="profile.jpg" alt="me, myself and I" class="profile-pic">
         <p>PhD student in both COLT and Infolex groups at Universitat Pompeu Fabra, under the supervision of Elisenda Bernal and Thomas Brochhagen.</p>
         <p>I am interested in language models and how these can detect and track semantic change. Now, I amb working in the automatization of the detection of semantic neology in Catalan. Before that, I graduated from Translation and Applied Languages, 
         and got a master on Theoretical and Experimental Linguistics, with a specialization on Computational Linguistics.</p>
