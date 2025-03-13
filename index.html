@@ -1,90 +1,555 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>martagcasado</title>
-<style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-            padding: 50px;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-        h1, h2 {
-            font-size: 2em;
-            text-align: center;
-        }
-        p, li {
-            font-size: 1.2em;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .profile-pic {
-            display: block;
-            margin: 0 auto 20px;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li::before {
-            content: "\2022";
-            color: #007BFF;
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            margin-left: -1em;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Marta Garcia-Casado</h1>
-         <img src="profile.jpg" alt="me, myself and I" class="profile-pic">
-        <p>PhD student in both COLT and Infolex groups at Universitat Pompeu Fabra, under the supervision of Elisenda Bernal and Thomas Brochhagen.</p>
-        <p>I am interested in language models and how these can detect and track semantic change. Now, I amb working in the automatization of the detection of semantic neology in Catalan. Before that, I graduated from Translation and Applied Languages, 
-        and got a master on Theoretical and Experimental Linguistics, with a specialization on Computational Linguistics.</p>
-        
-        <h2>Experience</h2>
-        <ul>
-            <li>Reseach Assistant</li>
-            <li>XXXX</li>
+<html lang="en">
+    <head>
+        <style>
+            ul.custom-bullets {
+                list-style-type: none;
+            }
+
+            ul.custom-bullets li::before {
+                content: "\2022";
+                color: orange;
+                font-weight: bold;
+                margin-right: 5px;
+            }
+        </style>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <title>Resume - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css"/>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet"/>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Eleonora Gualdoni</span>
+                <span class="d-none d-lg-block">
+                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/eleonora1.jpeg" alt="..."/>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#news">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#presentations">Presentations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#CV">CV</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Eleonora
+                        <span class="text-primary">Gualdoni</span>
+                    </h1>
+                    <br>
+                    <p class="lead mb-5">
+                        I am an AIML resident at Apple MLR, in the Paris team led by Marco Cuturi <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Apple_Computer_Logo_rainbow.svg/1920px-Apple_Computer_Logo_rainbow.svg.png" alt="Apple Logo" width="40" height="40">
+                    </p>
+                    I am also a PhD student in <b>Computational Linguistics</b>
+                    at the <b>Universitat Pompeu Fabra</b>
+                    , 
+                        Barcelona, supervised by <a href="https://gboleda.github.io">Gemma Boleda</a>
+                    .
+                    <br>
+                    <br>
+                    In my research, I study how humans and models connect language to visual inputs: I am particularly interested in how people refer to the objects they see, navigating their lexicon according to their communicative needs, and in how this lexicon evolved. I work with deep-learning multimodal models, investigating how they deal with language and vision tasks, and exploring how we can encourage human-like behaviors.
+                    <br>
+                    <br>
+                    <!--My work is part of the ERC project <a href="https://www.upf.edu/web/amore">AMORE</a>: "A MOdel of Reference to Entities" (PI: Gemma Boleda). I am also a member of the UPF research group <a href="https://www.upf.edu/web/colt">COLT</a>: "COmputational Linguistics and Linguistic Theory".</p>
+                    <p class="lead mb-5"> Check out <a href="https://cognitivesciencesociety.org/what-makes-a-duck-a-duck/">my article</a> on the blog of the Cognitive Science society! </p> 
+                            <img src="assets/img/cogsci_blog.png" width="600" </p> -->
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com" class="social-icon" href="#!">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/eleonoragualdoni" class="social-icon" href="#!">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com/elegualdoni" class="social-icon" href="#!">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0"/>
+            <!-- News-->
+            <section class="resume-section" id="news">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">News</h2>
+                    <ul class="custom-bullets">
+                        <br>
+                        <li>
+                            Paper accepted at <b>NeurIPS</b>
+                            ! Bridging semantics and pragmatics in information-theoretic emergent communication. <b>Eleonora Gualdoni</b>
+                            , Mycal Tucker, Roger Levy, Noga Zaslavsky
+                        </li>
+                        <br>
+                        <li>
+                            Paper accepted at <b>EMNLP</b>
+                            ! Why do objects have many names? A study on word informativeness in language use and lexical systems. <b>Eleonora Gualdoni</b>
+                            , Gemma Boleda
+                        </li>
+                        <br>
+                        <li>
+                            Abstract accepted at <b>SCiL</b>
+                            : Bridging semantics and pragmatics in information-theoretic emergent communication. <b>Eleonora Gualdoni</b>
+                            , Mycal Tucker, Roger Levy, Noga Zaslavsky
+                        </li>
+                        <br>
+                        <li>
+                            I gave a talk at the <b>LINGUAE</b>
+                            lab at <b>ENS</b>
+                            , Paris: "Systems of object names"
+                        </li>
+                        <br>
+                        <li>
+                            Paper accepted in the <b>Journal of Memory and Language</b>
+                            ! What's in a name? A large-scale computational study on how competition between names affects naming variation. <b>Eleonora Gualdoni</b>
+                            , Thomas Brochhagen, Andreas Mädebach, Gemma Boleda
+                        </li>
+                        <br>
+                        <li>
+                            Paper accepted in <b>Science</b>
+                            ! From language development to language evolution: A unified view of human lexical creativity. Thomas Brochhagen, Gemma Boleda, <b>Eleonora Gualdoni</b>
+                            , Yang Xu.
+                        </li>
+                        <br>
+                        <li>
+                            I am going to <a href="http://lxmls.it.pt/2023/">LxMLS 2023</a>
+                            , the Lisbon Machine Learning Sumer School!
+</b></li><br>
+<li>
+    <b>July 3rd 2023:</b>
+    we are back from REST-CL 2023, our retreat for PhD students! See our pictures <a href="https://twitter.com/colt_upf/status/1676593123705643011">here</a>
+    ! 
+</li>
+<br>
+<li>
+    <b>April 2023:</b>
+    our paper <a href="https://psyarxiv.com/rxw9b">Quantifying informativeness of names in visual space</a>
+    has been accepted to CogSci2023!
+</li>
+<br>
+<li>
+    <b>March 16th 2023:</b>
+    I gave a talk at MIT, in the CPL meeting: Object names and their dynamicity.
+</li>
+<br>
+<li>
+    <b>March 1st 2023:</b>
+    I joined <b>MIT</b>
+    as a visiting researcher in the <a href="http://cpl.mit.edu">Computational Psycholinguistics Lab</a>
+    !
+</li>
+<br>
+<li>
+    <b>February 27th 2023:</b>
+    New paper accepted at CVPR 2023: <a href="https://arxiv.org/abs/2304.01662">Cross-domain image captioning with discriminative fine-tuning</a>
+    .
+</li>
+<br>
+<li>
+    <b>January 31st 2023:</b>
+    check out <a href="https://cognitivesciencesociety.org/what-makes-a-duck-a-duck/">my article</a>
+    on the blog of the Cognitive Science society! 
+</li>
+<br>
+<li>
+    <b>December 19th 2022:</b>
+    I’ll give two talks at the <a href="https://www.cvc.uab.es/blog/2022/12/19/deep-learning-barcelona-symposium-2022/">Deep Learning Barcelona Symposium</a>
+    .
+</li>
+<br>
+<li>
+    <b>October 6th 2022: </b>
+    New paper accepted at EMNLP. <a href="https://arxiv.org/abs/2210.11512">Communication breakdown: on the low mutual intelligibility between human and neural captioning.</a>
+    We’ll go to Abu Dhabi!
+</li>
+<br>
+<li>
+    <b>September 14th 2022:</b>
+    I am going to give two presentations at the conference <a href="https://sites.google.com/view/disembodiment/home">(Dis)embodiment</a>
+    at the University of Gothenburg
+</li>
+<br>
+<li>
+    <b>August 2022:</b>
+    I am visiting the <a href="https://www.cs.toronto.edu/~yangxu/">Cognitive Lexicon Lab</a>
+    at the University of Toronto
+</li>
+<br>
+<li>
+    We are going to <b>CogSci</b>
+    ! See you in ROOM 104C - MTCC North Building on the 28th of July 2022, from 10:20 to 11:40 ET for our oral presentation of <a href="https://psyarxiv.com/34ckf/">Woman or tennis player? Visual typicality and lexical frequency affect variation in object naming</a>
+    , and in Constitution Hall on the 29th of July 2022, from 10:20 to 12:00 ET for our poster presentation of <a href="https://psyarxiv.com/fyzsk/">Effects of task and visual context on referring expressions using natural scenes</a>
+    .
+</li>
+<br>
+<li>
+    <b>April 14th 2022:</b>
+    we are back from REST-CL our retreat for PhD students! See our pictures <a href="https://twitter.com/colt_upf/status/1514656694734835713">here</a>
+    !
+</li>
+</ul></div></section><hr class="m-0"/>
+<!-- Publications-->
+<section class="resume-section" id="publications">
+    <div class="resume-section-content">
+        <h2 class="mb-5">Publications</h2>
+        <!-- 2024-->
+        <h3 class="mb-0">2024</h3>
+        <ul class="custom-bullets">
+            <br>
+            <li>
+                Bridging semantics and pragmatics in information-theoretic emergent communication. <b>Eleonora Gualdoni</b>
+                , Mycal Tucker, Roger Levy, Noga Zaslavsky. 2024. Advances in Neural Information Processing Systems (NeurIPS). 
+            </li>
+            <br>
+            <li>
+                Why do objects have many names? A study on word informativeness in language use and lexical systems. <b>Eleonora Gualdoni</b>
+                , Gemma Boleda. 2024. The 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP). 
+            </li>
+            <br>
+            <li>
+                Bridging semantics and pragmatics in information-theoretic emergent communication. <b>Eleonora Gualdoni</b>
+                , Mycal Tucker, Roger Levy, Noga Zaslavsky. SCiL. 
+            </li>
+            <br>
+            <li>
+                On the Use of Language and Vision Models for Cognitive Science: The Case of Naming Norms. Proceedings of CogSci. Zhirui Chen, Anread Mädebach, <b>Eleonora Gualdoni</b>
+                , Gemma Boleda. 2024. <a href="https://escholarship.org/uc/item/7kk464jm">[Paper]</a>
+            </li>
+            <br>
         </ul>
-        
-        <h2>Teaching</h2>
-        <ul>
-            <li>2024-2025</li>
-            	<ul>
-            		<li>Computational Semantics, in the Master of Theoretical and Experimental Linguistics. Professor: Gemma Boleda. Department of Translation and Language Science. Universitat Pompeu Fabra.</li>
-            		<li>Language and Society, in the Applied Languages degree.</li>
-            		<li>Introduction to the University and Computational Resources, in the Translation and Interpreting degree.</li>
-            	</ul>
+        <!-- 2023-->
+        <h3 class="mb-0">2023</h3>
+        <ul class="custom-bullets">
+            <br>
+            <li>
+                What’s in a name? A large-scale computational study on how competition between names affects naming variation. <b>Eleonora Gualdoni</b>
+                , Thomas Brochhagen, Andreas Mädebach, Gemma Boleda. Journal of Memory and Language. <a href="https://authors.elsevier.com/sd/article/S0749-596X(23)00058-X">[Paper]</a>
+                <a href='https://osf.io/s7h9f/'>[Repository]</a>
+                <a href='https://colab.research.google.com/drive/1o63vmYlVNTcp7RIvzP4cpijKwLkhJdZs?usp=sharing'>[Demo1]</a>
+                <a href='https://colab.research.google.com/drive/18r7UuVTGMZJ1ay4bmM0HaVe3WICwctuY?usp=sharing'>[Demo2]</a>
+            </li>
+            <br>
+            <li>
+                From language development to language evolution: A unified view of human lexical creativity. Thomas Brochhagen, Gemma Boleda, <b>Eleonora Gualdoni</b>
+                , Yang Xu. Science. <a href='https://brochhagen.github.io/content/ms/accepted-lexical-creativity.pdf'>[Paper]</a>
+                <a href='https://www.science.org/stoken/author-tokens/ST-1336/full'>[Supplementary material]</a>
+                <a href='https://doi.org/10.17605/OSF.IO/ZKGU3'>[Repository]</a>
+            </li>
+            <br>
+            <li>
+                Quantifying informativeness of names in visual space. <b>Eleonora Gualdoni</b>
+                , Charles Kemp, Yang Xu, Gemma Boleda. 2023. Proceedings of the 45th Annual Conference of the Cognitive Science Society (CogSci). <a href="https://psyarxiv.com/rxw9b">[Paper]</a>
+            </li>
+            <br>
+            <li>
+                Run Like a Girl! Sport-Related Gender Bias in Language and Vision. Sophia Harrison, <b>Eleonora Gualdoni</b>
+                , Gemma Boleda. 2023. Findings of ACL. <a href="https://arxiv.org/abs/2305.14468">[Paper]</a>
+            </li>
+            <br>
+            <li>
+                Cross-domain image captioning with discriminative fine-tuning. Roberto Dessì, Michele Bevilacqua, <b>Eleonora Gualdoni</b>
+                , Nathanaël Rakotonirina, Francesca Franzon & Marco Baroni. 2023. CVPR. <a href="https://arxiv.org/abs/2304.01662">[Paper]</a>
+            </li>
         </ul>
-        
-        <h2>Congresos</h2>
-        <ul>
-            <li>[Congresos en los que has participado]</li>
+        <!-- 2022-->
+        <h3 class="mb-0">2022</h3>
+        <ul class="custom-bullets">
+            <br>
+            <li>
+                Communication breakdown: on the low mutual intelligibility between human and neural captioning. Roberto Dessì, <b>Eleonora Gualdoni</b>
+                , Francesca Franzon, Gemma Boleda, Marco Baroni. 2022. The 2022 Conference on Empirical Methods in Natural Language Processing (EMNLP).  <a href="https://arxiv.org/abs/2210.11512">[Paper]</a>
+            </li>
+            <br>
+            <li>
+                Woman or tennis player? Visual typicality and lexical frequency affect variation in object naming. <b>Eleonora Gualdoni</b>
+                , Thomas Brochhagen, Andreas Mädebach, Gemma Boleda. 2022. Proceedings of the 44th Annual Conference of the Cognitive Science Society (CogSci). <a href="https://psyarxiv.com/34ckf/">[Paper]</a>
+                <a href="https://osf.io/q72ne/">[Repository]</a>
+            </li>
+            <br>
+            <li>
+                Effects of task and visual context on referring expressions using natural scenes. Andreas Mädebach, Ekaterina Torubarova, <b>Eleonora Gualdoni</b>
+                , Gemma Boleda. 2022. Proceedings of the 44th Annual Conference of the Cognitive Science Society (CogSci). <a href="https://psyarxiv.com/fyzsk/">[Paper]</a>
+                <a href="https://osf.io/p3jt5/">[Repository]</a>
+            </li>
+            <br>
+            <li>
+                Horse or pony? Visual typicality and lexical frequency affect variability in object naming. <b>Eleonora Gualdoni</b>
+                , Thomas Brochhagen, Andreas Mädebach, Gemma Boleda. 2022. Proceedings of the Society for Computation in Linguistics (SCiL). Vol. 5 , Article 26  <a href="https://scholarworks.umass.edu/scil/vol5/iss1/26/">[Paper]</a>
+                <a href="https://www.youtube.com/watch?v=UPFr91cjm8Y">[Video 15 mins]</a>
+            </li>
+        </ul>
+        <!-- 2020-->
+        <h3 class="mb-0">2020</h3>
+        <ul class="custom-bullets">
+            <br>
+            <li>
+                Grounded and Ungrounded Referring Expressions in Human Dialogues: Language Mirrors Different Grounding Conditions. <b>Eleonora Gualdoni</b>
+                , Raffaella Bernardi, Raquel Fernández, Sandro Pezzelle. 2020. CLiC-it 2020.  <a href="http://ceur-ws.org/Vol-2769/paper_38.pdf">[Paper]</a>
+            </li>
+            <br>
+            <li>
+                Be Different to Be Better! A Benchmark to Leverage the Complementarity of Language and Vision. Sandro Pezzelle, Claudio Greco, Greta Gandolfi, <b>Eleonora Gualdoni</b>
+                , Raffaella Bernardi. 2020. Findings of EMNLP.  <a href="https://aclanthology.org/2020.findings-emnlp.248.pdf">[Paper]</a>
+                <a href="https://sites.google.com/view/bd2bb/home">[Website]</a>
+                <a href="https://github.com/sandropezzelle/bd2bb">[Repository]</a>
+            </li>
         </ul>
     </div>
-</body>
-</html>
+</section>
+<hr class="m-0"/>
+<!-- Presentations-->
+<section class="resume-section" id="presentations">
+    <div class="resume-section-content">
+        <h2 class="mb-5">Presentations</h2>
+        <!-- 2024-->
+        <h3 class="mb-0">2024</h3>
+        <ul class="custom-bullets">
+            <br>
+            <li>Talk at LINGUAE lab, ENS, Paris: Systems of object names.</li>
+            <br>
+        </ul>
+        <!-- 2023-->
+        <h3 class="mb-0">2023</h3>
+        <ul class="custom-bullets">
+            <br>
+            <li>
+                Poster presentation at CogSci 2023: Quantifying informativeness of names in visual space. <a href="https://psyarxiv.com/rxw9b">[Paper]</a>
+            </li>
+            <br>
+            <li>Computational Psycholinguistics Lab meeting, MIT: Object names and their dynamicity. Massachusetts Institute of Technology. </li>
+        </ul>
+        <!-- 2022-->
+        <h3 class="mb-0">2022</h3>
+        <ul class="custom-bullets">
+            <br>
+            <li>UR-Ling workshop: How do we call things? Insights from a computational study and a new dataset. Universitat Pompeu Fabra.</li>
+            <br>
+            <li>
+                Poster presentation at EMNLP 2022: Communication breakdown: on the low mutual intelligibility between human and neural captioning.  <a href="https://arxiv.org/abs/2210.11512">[Paper]</a>
+            </li>
+            <br>
+            <li>
+                2 talks at the <a href="https://www.cvc.uab.es/blog/2022/12/19/deep-learning-barcelona-symposium-2022/">Deep Learning Barcelona Symposium</a>
+                . Communication breakdown: on the low mutual intelligibility between human and neural captioning & What’s in a name? A large-scale computational study on how competition between names affects naming variation.
+            </li>
+            <br>
+            <li>2 oral presentations at the (Dis)embodiment conference at the University of Gothenburg. Woman or tennis player? Visual typicality and lexical frequency affect variation in object naming. & Effects of task and visual context on referring expressions using natural scenes.</li>
+            <br>
+            <li>
+                Oral presentation at CogSci 2022: Woman or tennis player? Visual typicality and lexical frequency affect variation in object naming. <a href="https://psyarxiv.com/34ckf/">[Paper]</a>
+                <a href="https://osf.io/q72ne/">[Repository]</a>
+            </li>
+            <br>
+            <li>
+                Poster presentation at CogSci 2022: Effects of task and visual context on referring expressions using natural scenes. <a href="https://psyarxiv.com/fyzsk/">[Paper]</a>
+                <a href="https://osf.io/p3jt5/">[Repository]</a>
+            </li>
+            <br>
+            <li>
+                Oral presentation at SCiL 2022: Horse or pony? Visual typicality and lexical frequency affect variability in object naming. <a href="https://scholarworks.umass.edu/scil/vol5/iss1/26/">[Paper]</a>
+                <a href="https://www.youtube.com/watch?v=UPFr91cjm8Y">[Video 15 mins]</a>
+            </li>
+        </ul>
+        <!-- 2021-->
+        <h3 class="mb-0">2021</h3>
+        <ul class="custom-bullets">
+            <br>
+            <li>
+                Oral presentation at <a href="http://www.cbs.polyu.edu.hk/PRS2021/"></a>
+                at Hong Kong Polytechnic University: Visual features predict human agreement on object naming, and graded category membership: insights from a language & vision analysis. Best oral presentation award. 
+            </li>
+        </ul>
+        <!-- 2020-->
+        <h3 class="mb-0">2020</h3>
+        <ul class="custom-bullets">
+            <br>
+            <li>Oral presentation at TExMod 2020: Adjective Ordering: a Compositional Distributional Semantics Approach. Roberto Zamparelli, Nicola Sartorato, Eleonora Gualdoni, Greta Gandolfi. </li>
+        </ul>
+    </div>
+</section>
+<hr class="m-0"/>
+<!-- CV-->
+<section class="resume-section" id="CV">
+    <div class="resume-section-content">
+        <h2 class="mb-5">CV</h2>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">EDUCATION and WORK</h3>
+                <br>
+                <div class="subheading mb-3">Visiting researcher at MIT</div>
+                <div class="flex-shrink-0">
+                    <span class="text-primary">03/2023 - 05/2023</span>
+                </div>
+                <p>
+                    I visited the <a href="http://cpl.mit.edu">Computational Psycholinguistics Lab</a>
+                    , under the supervision of <a href="httphttps://www.mit.edu/~rplevy/">Roger Levy</a>
+                    and <a href="https://www.nogsky.com">Noga Zaslavsky</a>
+                    . 
+                </p>
+                <br>
+                <div class="subheading mb-3">PhD student in Computational Linguistics</div>
+                <div class="flex-shrink-0">
+                    <span class="text-primary">2020 - ongoing</span>
+                </div>
+                <p>
+                    Supervised by Gemma Boleda, in the <a href="https://www.upf.edu/web/amore">AMORE</a>
+                    project. Member of the <a href="https://www.upf.edu/web/colt">COLT</a>
+                    group. 
+                </p>
+                <br>
+                <div class="subheading mb-3">Research thesis at ILLC</div>
+                <div class="flex-shrink-0">
+                    <span class="text-primary">03/2020 - 05/2020</span>
+                </div>
+                <p>
+                    I did my MSc thesis at <a href="https://www.illc.uva.nl/">ILLC</a>
+                    , University of Amsterdam, supervised by <a href="https://sandropezzelle.github.io">Sandro Pezzelle</a>
+                    and <a href="https://staff.fnwi.uva.nl/r.fernandezrovira/">Raquel Fernández</a>
+                    , in the <a href="https://dmg-illc.github.io/dmg/">DIalogue Modeling Group</a>
+                    . 
+                </p>
+                <br>
+                <div class="subheading mb-3">
+                    Research Intern at <a href="https://www.fbk.eu/en/">FBK</a>
+                </div>
+                <div class="flex-shrink-0">
+                    <span class="text-primary">11/2019 - 02/2020</span>
+                </div>
+                <p>
+                    NLP Research Unit, supervised by <a href="https://www.fbk.eu/en/">Carlo Strapparava</a>
+                </p>
+                <br>
+                <div class="subheading mb-3">MSc in Cognitive Science - Language and Multimodal Interaction</div>
+                <div class="flex-shrink-0">
+                    <span class="text-primary">2018 - 2020</span>
+                </div>
+                <p>
+                    <a href="https://www.cimec.unitn.it/">CIMeC</a>
+                    , University of Trento, 110/110 cum laude. 
+                </p>
+                <br>
+                <div class="subheading mb-3">Harvard Summer School at CIMeC </div>
+                <div class="flex-shrink-0">
+                    <span class="text-primary">July 2017</span>
+                </div>
+                <p>"Windows into the Structure of the Mind and Brain” </p>
+                <br>
+                <div class="subheading mb-3">B.A. in Philosophy</div>
+                <div class="flex-shrink-0">
+                    <span class="text-primary">2015 - 2018</span>
+                </div>
+                <p>Università San Raffaele, Milano (IT). 110/110 cum laude </p>
+                <br>
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">TEACHING and SUPERVISION</h3>
+                    <br>
+                    <div class="subheading mb-3">2023</div>
+                    <ul class="custom-bullets">
+                        <br>
+                        <li>Bachelor's thesis co-supervision at University of Amsterdam. Student: Krijn Dignum; Co-supervisors: Mario Giulianelli, Roberto Dessì. "Towards Pragmatic Efficiency in Natural Language Generation: Optimizing Communication Costs and Utility in Summarization Tasks" </li>
+                        <li>MSc thesis co-supervision at Universitat Pompeu Fabra. Student: Mar Domínguez; Senior supervisor: Gemma Boleda. “CAT ManyNames: A New Dataset for Object Naming in Catalan”.</li>
+                        <li>
+                            <b>Computational Semantics:</b>
+                            TA for MSc course. Professor: Gemma Boleda. Department of Translation and Language Science. Universitat Pompeu Fabra.
+                        </li>
+                        <li>
+                            <b>Python Leveling:</b>
+                            MSc course. Department of Translation and Language Science. Universitat Pompeu Fabra.
+                        </li>
+                        <br>
+                    </ul>
+                    <br>
+                    <div class="subheading mb-3">2022</div>
+                    <ul class="custom-bullets">
+                        <br>
+                        <li>MSc thesis co-supervision at Universitat Pompeu Fabra. Student: Sophia Harrison; Senior supervisor: Gemma Boleda. “Run Like a Girl! Sports-Related Gender Bias in Language and Vision Datasets and Computer Vision Model” </li>
+                        <li>MSc thesis co-supervision at Universitat Pompeu Fabra. Student: Mar Domínguez; Senior supervisor: Gemma Boleda. “CAT ManyNames: A New Dataset for Object Naming in Catalan”.</li>
+                        <li>
+                            <b>Computational Semantics:</b>
+                            TA for MSc course. Professor: Gemma Boleda. Department of Translation and Language Science. Universitat Pompeu Fabra.
+                        </li>
+                        <br>
+                    </ul>
+                    <br>
+                    <div class="subheading mb-3">2021</div>
+                    <ul class="custom-bullets">
+                        <br>
+                        <li>
+                            <b>Computational Semantics:</b>
+                            TA for MSc course. Professor: Gemma Boleda. Department of Translation and Language Science. Universitat Pompeu Fabra. 
+                        </li>
+                        <br>
+                    </ul>
+                    <br>
+                    <div class="subheading mb-3">2020</div>
+                    <ul class="custom-bullets">
+                        <br>
+                        <li>MSc thesis co-supervision at Universitat Pompeu Fabra. Student: Daniela Corbetta; Senior supervisor: Louise McNally. “Effects of typicality and category label on referring expressions in context: empirical analysis in the domain of people”. </li>
+                        <br>
+                    </ul>
+                </div>
+                <br>
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">FELLOWSHIPS</h3>
+                    <br>
+                    <ul class="custom-bullets">
+                        <br>
+                        <li>"ESTADA" funds (UPF) for research visit at MIT.
+                                
+                        <li>PhD funded by the AMORE project, ERC grant agreement No. 715154. </li>
+                        <li>Erasmus Scholarship, for thesis abroad (3 months).</li>
+                        <li>Full scholarship for B.A. in Philosophy, awarded for high-school excellence. </li>
+                        <br>
+                    </ul>
+                </div>
+                <br>
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">OTHER</h3>
+                    <br>
+                    <ul class="custom-bullets">
+                        <li>Organizer of REST-CL 2023, retreat for PhD students in Computational Linguistics.
+                                
+                        <li>Organizer of REST-CL 2022, retreat for PhD students in Computational Linguistics. </li>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+        </div>
+</section>
+<hr class="m-0"/>
+</div>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+</body></html>
